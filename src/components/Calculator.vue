@@ -50,7 +50,7 @@ const costPerInstall = computed(() => {
     } else if (installationsOverTheThreshold.value > 500_000 && installationsOverTheThreshold.value <= 1_000_000) {
       return 0.03
     }
-    return 0.02    
+    return 0.02
   } else if (mode.value === 'enterprise') {
     if (emergingMarket.value) {
       return 0.005
